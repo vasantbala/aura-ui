@@ -1,0 +1,17 @@
+# Node
+node_modules/
+
+# macOS
+.DS_Store
+
+# Environment files — never commit secrets
+.env
+.env.local
+.env*.local
+
+# Editors
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
