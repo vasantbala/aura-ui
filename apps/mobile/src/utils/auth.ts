@@ -1,4 +1,4 @@
-import React from 'react';
+import { useCallback } from 'react';
 import * as WebBrowser from 'expo-web-browser';
 import * as AuthSession from 'expo-auth-session';
 import * as Crypto from 'expo-crypto';
@@ -51,7 +51,7 @@ export function useGoogleAuth() {
     discovery,
   );
 
-  const fetchUserInfo = React.useCallback(
+  const fetchUserInfo = useCallback(
     async (accessToken: string): Promise<GoogleUser> => {
       const resp = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
         headers: { Authorization: `Bearer ${accessToken}` },

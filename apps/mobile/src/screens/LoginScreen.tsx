@@ -64,7 +64,7 @@ export function LoginScreen() {
 
       <View style={styles.features}>
         <FeatureRow icon="📅" text="Syncs with your calendar" />
-        <FeatureRow icon="✅" text="Manages tasks (Microsoft To Do &amp; Todoist)" />
+        <FeatureRow icon="✅" text="Manages tasks (Microsoft To Do & Todoist)" />
         <FeatureRow icon="🔔" text="Reminds you before it's too late" />
       </View>
 
